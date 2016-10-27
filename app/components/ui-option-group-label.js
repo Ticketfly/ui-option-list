@@ -1,0 +1,1 @@
+export { default } from 'ui-option-list/components/ui-option-group-label';

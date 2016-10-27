@@ -1,0 +1,11 @@
+{{#if placeholder}}
+  {{#ui-option}}
+    {{placeholder}}
+  {{/ui-option}}
+{{/if}}
+
+{{#each items as |item|}}
+  {{yield item}}
+{{else}}
+  {{yield to="inverse"}}
+{{/each}}

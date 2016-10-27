@@ -1,0 +1,13 @@
+{{#if toggleable}}
+  {{#ui-option-group-label action="toggle" selected=selected}}
+    {{label}}
+  {{/ui-option-group-label}}
+{{else}}
+  <span class="ff-option-group-label">{{label}}</span>
+{{/if}}
+
+<ul>
+  {{#each items as |item|}}
+    {{yield item}}
+  {{/each}}
+</ul>
